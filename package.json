@@ -1,6 +1,6 @@
 {
   "name": "sol-type-check",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight library to validate Solidity data types like int, uint, and bytes.",
   "author": "Raka Widhi Antoro <rakawidhiantoro@gmail.com>",
   "funding": {
