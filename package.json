@@ -1,7 +1,7 @@
 {
   "name": "sol-type-check",
   "version": "1.0.1",
-  "description": "A lightweight library to validate Solidity data types like int, uint, and bytes.",
+  "description": "A lightweight JavaScript library to validate Solidity data types like int, uint, bytes, and Ethereum-specific types such as addresses and transaction hashes.",
   "author": "Raka Widhi Antoro <rakawidhiantoro@gmail.com>",
   "funding": {
     "type": "patreon",
