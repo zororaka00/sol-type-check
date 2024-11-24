@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A lightweight library to validate Solidity data types like int, uint, and bytes.",
   "author": "Raka Widhi Antoro <rakawidhiantoro@gmail.com>",
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/zororaka"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/zororaka00/sol-type-check.git"
