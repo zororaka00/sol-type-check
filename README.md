@@ -103,11 +103,10 @@ isHash("0xInvalidHash"); // false
 
 If you would like to contribute to this project, feel free to fork the repository and create a pull request. We welcome bug reports, suggestions, and improvements.
 
+## 🛠 Support
+
+If you encounter any issues or have questions, please open an issue in this repository or contact us at rakawidhiantoro@gmail.com.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-- Author: Raka Widhi Antoro  
-- Email: rakawidhiantoro@gmail.com  
