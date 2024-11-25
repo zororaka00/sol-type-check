@@ -47,13 +47,13 @@ isUint(32, 4294967295); // true
 isUint(8, -1); // false
 ```
 
-#### `isBytes(value, bytes)`
+#### `isBytes(bytes, value)`
 
 Checks if a value is a valid bytes array of the specified size.
 
 ```javascript
-isBytes("0xabcdef", 4); // true
-isBytes("0x12345", 2); // false
+isBytes(4, "0xabcdef"); // true
+isBytes(2, "0x12345"); // false
 ```
 
 #### `isAddress(value)`
@@ -86,10 +86,10 @@ isHash("0xInvalidHash"); // false
   - **`bits`**: An integer (8, 16, 32, 64, 128, or 256) representing the bit size.
   - **`value`**: A number to check if it is within the valid range.
 
-- **`isBytes(value, bytes)`**  
+- **`isBytes(bytes, value)`**  
   Validates a bytes array of a specified size.  
-  - **`value`**: A string representing the bytes in hexadecimal format (prefixed with `0x`).
   - **`bytes`**: An integer (1, 2, 4, 8, 16, or 32) representing the expected byte size.
+  - **`value`**: A string representing the bytes in hexadecimal format (prefixed with `0x`).
 
 - **`isAddress(value)`**  
   Validates an Ethereum address.  

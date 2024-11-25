@@ -36,7 +36,7 @@ function isUint(bits: 8 | 16 | 32 | 64 | 128 | 256, value: number): boolean {
  * @returns `true` if the value is a valid hex string and matches the expected byte size, otherwise `false`.
  * @throws Error if the byte size is not between 1 and 32.
  */
-function isBytes(value: string, bytes: 1 | 2 | 4 | 8 | 16 | 32): boolean {
+function isBytes(bytes: 1 | 2 | 4 | 8 | 16 | 32, value: string): boolean {
     // Check if the byte size is valid
     if (![1, 2, 4, 8, 16, 32].includes(bytes)) {
       throw new Error("Bytes must be one of the following sizes: 1, 2, 4, 8, 16, 32.");
