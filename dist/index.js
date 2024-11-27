@@ -14,7 +14,7 @@ function isUint(bits, value) {
     const max = 2 ** bits - 1;
     return Number.isInteger(value) && value >= 0 && value <= max;
 }
-function isBytes(value, bytes) {
+function isBytes(bytes, value) {
     if (![1, 2, 4, 8, 16, 32].includes(bytes)) {
         throw new Error("Bytes must be one of the following sizes: 1, 2, 4, 8, 16, 32.");
     }
@@ -23,13 +23,13 @@ function isBytes(value, bytes) {
     const hexRegex = /^0x[0-9a-fA-F]+$/;
     return hexRegex.test(value) && (value.length - 2) / 2 === bytes;
 }
-function isAddress(value) {
+function isAddress(walletAddress) {
     const addressRegex = /^0x[a-fA-F0-9]{40}$/;
-    return typeof value === "string" && addressRegex.test(value);
+    return typeof walletAddress === "string" && addressRegex.test(walletAddress);
 }
-function isHash(value) {
+function isHash(transactionHash) {
     const hashRegex = /^0x[a-fA-F0-9]{64}$/;
-    return typeof value === "string" && hashRegex.test(value);
+    return typeof transactionHash === "string" && hashRegex.test(transactionHash);
 }
 module.exports = {
     isInt,

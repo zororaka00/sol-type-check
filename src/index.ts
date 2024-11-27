@@ -54,10 +54,10 @@ function isBytes(bytes: 1 | 2 | 4 | 8 | 16 | 32, value: string): boolean {
  * @param value - The value to check.
  * @returns `true` if the value is a valid Ethereum address, otherwise `false`.
  */
-function isAddress(value: string): boolean {
+function isAddress(walletAddress: string): boolean {
     // Validate that the string starts with "0x" and contains exactly 40 hexadecimal characters
     const addressRegex = /^0x[a-fA-F0-9]{40}$/;
-    return typeof value === "string" && addressRegex.test(value);
+    return typeof walletAddress === "string" && addressRegex.test(walletAddress);
 }
 
 /**
@@ -66,10 +66,10 @@ function isAddress(value: string): boolean {
  * @param value - The value to check.
  * @returns `true` if the value is a valid Ethereum transaction hash, otherwise `false`.
  */
-function isHash(value: string): boolean {
+function isHash(transactionHash: string): boolean {
     // Validate that the string is a valid Ethereum transaction hash (66 characters, 0x + 64 hex characters)
     const hashRegex = /^0x[a-fA-F0-9]{64}$/;
-    return typeof value === "string" && hashRegex.test(value);
+    return typeof transactionHash === "string" && hashRegex.test(transactionHash);
 }
 
 module.exports = {
